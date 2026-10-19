@@ -16,6 +16,13 @@ Member sign-in uses Firebase; see `README.md` and `FIREBASE-SETUP.md`.
   "ΣΕΜΦΕ ΕΜΠ" is part of the logo: when the header slims on scroll
   (`html.hdr-small`) it may only get smaller, never hidden, at any screen
   width (owner, 2026-10-01; smoke.mjs checks it at 1440, 1101, 390 and 320px).
+* **All text is justified** (owner, 2026-10-19): text anywhere on the site,
+  on every page, lines up on BOTH the left and the right edge
+  (`text-align: justify`), with words broken at syllables (`hyphens: auto`,
+  the page is `lang="el"`) so the spaces between words stay even. The last
+  line of a paragraph stays aligned left, as usual. A new page or block of
+  text follows this too. Today only the legal pages do it (`.prose.wide` in
+  `assets/css/site.css`, from 640px up): bring the rest of the site in step.
 * **The top menu is kept short on purpose** (owner, like operationsacademia.org):
   the logo is the way home (no «Αρχική» link), the pages ABOUT the association
   and the site sit in one «Ο Σύλλογος ▾» drop-down (`NAV_GROUPS`, three
